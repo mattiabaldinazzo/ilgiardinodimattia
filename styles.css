@@ -368,21 +368,24 @@ p { margin: 0 0 1em; }
   max-width: 640px;
   margin: 0 auto;
 }
+.price-col { display: contents; }
+.price-uscita { order: 1; }
+.price-erba { order: 2; }
+.price-siepi { order: 3; }
+.price-idro { order: 4; }
+.price-asporto { order: 5; }
 
 @media (min-width: 1100px) {
   .price-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "uscita erba siepi"
-      "asporto erba idro";
     align-items: start;
     max-width: none;
   }
-  .price-uscita { grid-area: uscita; }
-  .price-erba { grid-area: erba; }
-  .price-siepi { grid-area: siepi; }
-  .price-idro { grid-area: idro; }
-  .price-asporto { grid-area: asporto; }
+  .price-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .price-card {
