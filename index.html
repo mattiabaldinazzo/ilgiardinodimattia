@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="preload" as="image" type="image/webp" imagesrcset="assets/hero-640.webp?v=5 640w, assets/hero-1024.webp?v=5 1024w" imagesizes="(max-width: 960px) 100vw, 560px">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 
   <script type="application/ld+json">
   {
@@ -114,7 +114,7 @@
           {
             "@type": "Question",
             "name": "Porto via gli sfalci e i rami tagliati?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Sì. Raccolgo erba, foglie e rami e li smaltisco. Lascio il giardino pulito e in ordine." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Sì. Raccolgo erba, foglie e rami e lascio il giardino pulito e in ordine. L'asporto del verde è gratuito fino a 3 sacchi; oltre, il costo si concorda prima di iniziare." }
           },
           {
             "@type": "Question",
@@ -153,6 +153,7 @@
         </button>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#prezzi">Prezzi</a></li>
           <li><a href="#come-lavoro">Come lavoro</a></li>
           <li><a href="#zone">Zone</a></li>
           <li><a href="#faq">Domande</a></li>
@@ -178,7 +179,7 @@
           </div>
           <ul class="hero-points" aria-label="Punti di forza">
             <li>Preventivo in 24 ore</li>
-            <li>Smaltimento sfalci incluso</li>
+            <li>Asporto verde gratis fino a 3 sacchi</li>
             <li>Interventi singoli o abbonamento</li>
           </ul>
         </div>
@@ -213,7 +214,7 @@
             <ul class="checks">
               <li>Siepi basse e medio-alte</li>
               <li>Potatura di contenimento e di forma</li>
-              <li>Raccolta e smaltimento dei rami</li>
+              <li>Raccolta dei rami e pulizia finale</li>
             </ul>
           </article>
 
@@ -243,6 +244,66 @@
             </ul>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section prices" id="prezzi" aria-labelledby="prezzi-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Prezzi</p>
+          <h2 id="prezzi-title">Prezzi chiari, a partire da</h2>
+          <p>Il prezzo finale dipende da dimensioni e accesso. Prima di iniziare ricevi sempre un preventivo scritto e gratuito.</p>
+        </header>
+
+        <div class="price-grid">
+          <article class="price-card price-uscita reveal">
+            <h3>Sopralluogo e uscita</h3>
+            <dl class="price-list">
+              <div><dt>Sopralluogo, se il lavoro viene accettato</dt><dd class="price-free">Gratis</dd></div>
+              <div><dt>Sopralluogo, se il lavoro non viene accettato o non è eseguibile <small>in base alla distanza, da concordare</small></dt><dd>da 10 a 20 &euro;</dd></div>
+              <div><dt>Uscita minima <small>a intervento</small></dt><dd>da 35 &euro;</dd></div>
+            </dl>
+          </article>
+
+          <article class="price-card price-erba reveal">
+            <h3>Taglio erba</h3>
+            <dl class="price-list">
+              <div><dt>Tosaerba fino a 200 mq <small>a intervento</small></dt><dd>da 40 &euro;</dd></div>
+              <div><dt>Tosaerba da 200 a 500 mq <small>a intervento</small></dt><dd>da 50 &euro;</dd></div>
+              <div><dt>Tosaerba oltre 500 mq <small>al mq</small></dt><dd>da 0,15 &euro;</dd></div>
+              <div><dt>Rifinitura bordi con decespugliatore <small>a intervento</small></dt><dd>da 5 &euro;</dd></div>
+              <div><dt>Decespugliatore su incolto o scarpate <small>all'ora</small></dt><dd>da 28 &euro;</dd></div>
+              <div><dt>Raccolta foglie e pulizia aiuole <small>all'ora</small></dt><dd>da 28 &euro;</dd></div>
+            </dl>
+          </article>
+
+          <article class="price-card price-siepi reveal">
+            <h3>Potatura siepi</h3>
+            <dl class="price-list">
+              <div><dt>Siepi basse, fino a 1,5 m <small>al metro lineare</small></dt><dd>da 6 &euro;</dd></div>
+              <div><dt>Siepi medie, da 1,5 a 2,5 m <small>al metro lineare</small></dt><dd>da 8 &euro;</dd></div>
+              <div><dt>Siepi alte, da 2,5 a 3,5 m <small>al metro lineare</small></dt><dd class="price-note">Da concordare</dd></div>
+            </dl>
+          </article>
+
+          <article class="price-card price-idro reveal">
+            <h3>Idropulitrice</h3>
+            <dl class="price-list">
+              <div><dt>Lavaggio pavimenti e vialetti <small>al mq, minimo 30 &euro;</small></dt><dd>da 3,50 &euro;</dd></div>
+              <div><dt>Lavaggio muretti <small>al mq per faccia, minimo 30 &euro;</small></dt><dd>da 5 &euro;</dd></div>
+            </dl>
+          </article>
+
+          <article class="price-card price-asporto reveal">
+            <h3>Asporto verde</h3>
+            <dl class="price-list">
+              <div><dt>Fino a 3 sacchi</dt><dd class="price-free">Gratis</dd></div>
+              <div><dt>Oltre 3 sacchi</dt><dd class="price-note">Da concordare</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <p class="price-footnote">* Acqua ed elettricità sono a carico del cliente. Il carburante per gli attrezzi è incluso nel prezzo.</p>
       </div>
     </section>
 
@@ -282,7 +343,7 @@
         <ul class="why-grid">
           <li class="why-item reveal"><strong>Puntualità</strong><span>Arrivo nel giorno e nell'ora concordati. Se piove, ti avviso e fissiamo una nuova data.</span></li>
           <li class="why-item reveal"><strong>Prezzi chiari</strong><span>Preventivo scritto prima di iniziare. Il prezzo concordato è il prezzo finale.</span></li>
-          <li class="why-item reveal"><strong>Pulizia inclusa</strong><span>Raccolgo e smaltisco erba, foglie e rami. Non devi fare nulla.</span></li>
+          <li class="why-item reveal"><strong>Pulizia inclusa</strong><span>Raccolgo erba, foglie e rami e lascio tutto in ordine. Asporto verde gratis fino a 3 sacchi.</span></li>
           <li class="why-item reveal"><strong>Attrezzatura professionale</strong><span>Tosaerba, tagliasiepi, decespugliatore e idropulitrice ad alta pressione.</span></li>
         </ul>
       </div>
@@ -341,7 +402,7 @@
           </details>
           <details>
             <summary>Porto via gli sfalci e i rami tagliati?</summary>
-            <p>Sì. Raccolgo erba, foglie e rami e li smaltisco. Lascio il giardino pulito e in ordine.</p>
+            <p>Sì. Raccolgo erba, foglie e rami e lascio il giardino pulito e in ordine. L'asporto del verde è gratuito fino a 3 sacchi; oltre, il costo si concorda prima di iniziare.</p>
           </details>
           <details>
             <summary>Ogni quanto va tagliata l'erba?</summary>

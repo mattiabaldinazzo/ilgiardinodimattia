@@ -359,6 +359,85 @@ p { margin: 0 0 1em; }
   font-weight: 500;
 }
 
+/* Prezzi */
+.prices { background: var(--cream); }
+
+.price-grid {
+  display: grid;
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+  .price-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "uscita erba siepi"
+      "asporto erba idro";
+    align-items: start;
+    max-width: none;
+  }
+  .price-uscita { grid-area: uscita; }
+  .price-erba { grid-area: erba; }
+  .price-siepi { grid-area: siepi; }
+  .price-idro { grid-area: idro; }
+  .price-asporto { grid-area: asporto; }
+}
+
+.price-card {
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 10px 30px -24px rgba(29, 59, 42, .5);
+}
+.price-card h3 {
+  padding-bottom: 14px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid var(--mint);
+}
+
+.price-list { margin: 0; }
+.price-list div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(29, 59, 42, .14);
+}
+.price-list div:last-child { border-bottom: 0; padding-bottom: 0; }
+.price-list dt {
+  font-weight: 500;
+  font-size: .97rem;
+  color: var(--ink);
+}
+.price-list dt small {
+  display: block;
+  margin-top: 2px;
+  font-size: .85rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+.price-list dd {
+  flex-shrink: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--forest);
+  white-space: nowrap;
+}
+.price-list .price-free { color: var(--leaf); }
+.price-list .price-note { font-weight: 600; font-size: .95rem; color: var(--muted); }
+
+.price-footnote {
+  max-width: 680px;
+  margin: 32px auto 0;
+  font-size: .92rem;
+  text-align: center;
+  color: var(--muted);
+}
+
 /* Passi */
 .steps {
   display: grid;
@@ -369,10 +448,11 @@ p { margin: 0 0 1em; }
   list-style: none;
   counter-reset: step;
 }
+.steps-section { background: var(--white); }
 .step {
   padding: 32px 28px;
   border-radius: var(--radius);
-  background: var(--white);
+  background: var(--cream);
   box-shadow: 0 10px 30px -24px rgba(29, 59, 42, .5);
 }
 .step p { color: var(--muted); margin: 0; }
@@ -755,6 +835,7 @@ p { margin: 0 0 1em; }
   .nav-menu .btn { width: 100%; margin-top: 16px; min-height: 50px; }
 
   .why-grid { grid-template-columns: 1fr; }
+  .price-card { padding: 22px 20px; }
   .contact-form { padding: 24px 20px; }
   .footer-inner { grid-template-columns: 1fr; }
 
