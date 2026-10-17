@@ -17,7 +17,7 @@
   <meta property="og:title" content="Il Giardino di Mattia | Giardiniere a Vicenza e provincia">
   <meta property="og:description" content="Potatura siepi, taglio erba e lavaggio con idropulitrice a Vicenza e provincia. Preventivo gratuito.">
   <meta property="og:url" content="https://mattiabaldinazzo.github.io/ilgiardinodimattia/">
-  <meta property="og:image" content="https://mattiabaldinazzo.github.io/ilgiardinodimattia/assets/og-image.png">
+  <meta property="og:image" content="https://mattiabaldinazzo.github.io/ilgiardinodimattia/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -29,6 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="preload" as="image" type="image/webp" imagesrcset="assets/hero-640.webp 640w, assets/hero-1024.webp 1024w" imagesizes="(max-width: 960px) 100vw, 560px">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -41,7 +42,7 @@
         "name": "Il Giardino di Mattia",
         "description": "Servizi di giardinaggio a Vicenza e provincia: potatura siepi, taglio erba di giardini e prati, lavaggio con idropulitrice di marciapiedi e muretti.",
         "url": "https://mattiabaldinazzo.github.io/ilgiardinodimattia/",
-        "image": "https://mattiabaldinazzo.github.io/ilgiardinodimattia/assets/og-image.png",
+        "image": "https://mattiabaldinazzo.github.io/ilgiardinodimattia/assets/og-image.jpg",
         "logo": "https://mattiabaldinazzo.github.io/ilgiardinodimattia/assets/apple-touch-icon.png",
         "telephone": "+390000000000",
         "email": "ilgiardinodimattia@gmail.com",
@@ -181,38 +182,11 @@
             <li>Interventi singoli o abbonamento</li>
           </ul>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 520 460" class="hero-svg">
-            <defs>
-              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6dc"/><stop offset="1" stop-color="#e7f1d8"/></linearGradient>
-              <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8bc34a"/><stop offset="1" stop-color="#5a9a3a"/></linearGradient>
-              <linearGradient id="hedge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f7d3a"/><stop offset="1" stop-color="#24502c"/></linearGradient>
-              <clipPath id="blob"><path d="M60 40C140-10 380-10 460 40s80 260 20 330-330 110-410 40S-20 90 60 40Z"/></clipPath>
-            </defs>
-            <g clip-path="url(#blob)">
-              <rect width="520" height="460" fill="url(#sky)"/>
-              <circle class="sun" cx="400" cy="110" r="46" fill="#ffd36b"/>
-              <path d="M0 250c90-50 170-40 260-10s170 30 260-20v240H0Z" fill="#c5e1a5"/>
-              <rect x="40" y="170" width="300" height="120" rx="58" fill="url(#hedge)"/>
-              <g fill="#2f6b34" opacity=".55">
-                <circle cx="90" cy="200" r="10"/><circle cx="150" cy="190" r="8"/><circle cx="210" cy="205" r="11"/><circle cx="270" cy="192" r="9"/><circle cx="120" cy="240" r="9"/><circle cx="240" cy="245" r="10"/><circle cx="300" cy="230" r="8"/>
-              </g>
-              <path d="M0 300c120-30 260-30 520 0v160H0Z" fill="url(#lawn)"/>
-              <g class="stripes" fill="#ffffff" opacity=".12">
-                <path d="M40 460 120 302h40L100 460Z"/><path d="M180 460 210 300h40l-10 160Z"/><path d="M320 460 300 300h40l40 160Z"/><path d="M460 460 390 302h40l90 158Z"/>
-              </g>
-              <path d="M330 300h150v18H330Z" fill="#d8d2c4"/>
-              <path d="M300 318h210v140H300Z" fill="#cfc8b8"/>
-              <path class="clean" d="M300 318h105v140H300Z" fill="#ebe6da"/>
-              <g stroke="#bdb5a2" stroke-width="2"><path d="M300 360h210M300 405h210M352 318v42M456 318v42M405 360v45M352 405v53M456 405v53"/></g>
-              <g class="drops" fill="#7cc3e8">
-                <circle cx="410" cy="350" r="4"/><circle cx="425" cy="338" r="3"/><circle cx="418" cy="372" r="3.5"/><circle cx="436" cy="356" r="2.5"/>
-              </g>
-              <g class="flower"><circle cx="70" cy="330" r="7" fill="#fff"/><circle cx="70" cy="330" r="3" fill="#ffd36b"/></g>
-              <g class="flower"><circle cx="140" cy="360" r="6" fill="#fff"/><circle cx="140" cy="360" r="2.5" fill="#ffd36b"/></g>
-              <g class="flower"><circle cx="230" cy="345" r="7" fill="#fff"/><circle cx="230" cy="345" r="3" fill="#ffd36b"/></g>
-            </g>
-          </svg>
+        <div class="hero-art">
+          <picture>
+            <source type="image/webp" srcset="assets/hero-640.webp 640w, assets/hero-1024.webp 1024w" sizes="(max-width: 960px) 100vw, 560px">
+            <img class="hero-img" src="assets/hero-1024.jpg" width="1024" height="765" fetchpriority="high" decoding="async" alt="Giardiniere al lavoro a Vicenza: lavaggio con idropulitrice di un muretto in pietra accanto a un prato appena tagliato e a una siepe potata">
+          </picture>
           <div class="hero-badge">
             <strong>Vicenza</strong>
             <span>e tutta la provincia</span>
