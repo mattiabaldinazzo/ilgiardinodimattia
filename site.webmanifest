@@ -1,0 +1,12 @@
+{
+  "name": "Il Giardino di Mattia",
+  "short_name": "Giardino Mattia",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f3ea",
+  "theme_color": "#1d3b2a",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
