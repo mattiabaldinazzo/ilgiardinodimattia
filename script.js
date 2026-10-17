@@ -4,7 +4,7 @@
   // Dati di contatto: modifica solo qui (formato internazionale, solo cifre)
   var CONTACT = {
     whatsapp: "390000000000",
-    email: "info@ilgiardinodimattia.it"
+    email: "ilgiardinodimattia@gmail.com"
   };
 
   document.documentElement.classList.remove("no-js");
@@ -30,6 +30,14 @@
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeMenu();
+  });
+
+  // Logo: torna in cima alla pagina
+  document.querySelector(".brand").addEventListener("click", function (e) {
+    e.preventDefault();
+    closeMenu();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.location.hash) history.replaceState(null, "", window.location.pathname + window.location.search);
   });
 
   // Ombra header allo scroll

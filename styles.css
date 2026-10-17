@@ -225,6 +225,11 @@ p { margin: 0 0 1em; }
 }
 .eyebrow-light { background: rgba(255, 255, 255, .12); color: var(--lime); }
 
+.lead-strong {
+  font-weight: 800;
+  color: var(--forest);
+}
+
 .accent {
   color: var(--leaf);
   font-style: italic;
